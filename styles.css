@@ -1,7 +1,20 @@
 body {
     background-color: #fffbfe;
     font-family: 'Sen', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 1.6;
+    position: relative;
+}
+
+.lowercase {
+    text-transform: lowercase;
 }
 
 .top-nav {
@@ -27,7 +40,42 @@ ul {
 }
 
 .top-nav li{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 10px 10px;
 }
 
+.welcome {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcoming .name {
+    box-shadow: inset 0px -6px 0px 0px #abff4f; 
+}
+
+.name{
+    -webkit-text-stroke: 0.0vw;
+}
+
+.name::before,
+.name::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.name::before {
+    background-color: teal;
+    animation: typewriter 1s ease forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left:100%;
+    }
+}
