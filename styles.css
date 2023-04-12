@@ -13,12 +13,20 @@ h1 {
     position: relative;
 }
 
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 .lowercase {
     text-transform: lowercase;
+    font-size: 2rem;
 }
 
 .top-nav {
-    margin: 15px 30px 15px 30px ;
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
 }
 
 .top-nav a {
@@ -78,4 +86,35 @@ ul {
     to {
         left:100%;
     }
+}
+
+footer {
+    text-align: center;
+    height: 10vh;
+}
+
+.spacer {
+    height: 20vh;
+}
+
+.about-me-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-me-header .name {
+    box-shadow: inset 0px -4px 0px 0px #c2eabd; 
+}
+
+.about-me-header .nickname {
+    margin-left: 10px;
+  }
+
+.about-me-header .my-nickname{
+    box-shadow: inset 0px -3px 0px 0px #35ce8d; 
+  }
+
+.about-me-contents {
+    align-items: stretch;
 }
