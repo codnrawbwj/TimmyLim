@@ -172,8 +172,28 @@ footer {
     display: flex;
     flex-wrap: wrap;
     margin-top: 4%;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
 }
 
 .skill-item {
+    display: flex;
     flex-basis: 25%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills-list p{
+    font-size: 1rem;
+}
+
+.skill-item i {
+    font-size: 3.5rem;
+    margin-top: 2rem;
+}
+
+.skill-item i:hover {
+    color: #297045;
 }
