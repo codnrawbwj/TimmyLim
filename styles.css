@@ -97,10 +97,14 @@ footer {
     height: 20vh;
 }
 
-.about-me-header {
+.header {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.header .skills {
+    box-shadow: inset 0px -4px 0px 0px #c2eabd;
 }
 
 .about-me-header .name {
@@ -116,6 +120,12 @@ footer {
   }
 
 .about-container {
+    display: flex;
+    margin: 40px 0;
+    align-items: stretch;
+}
+
+.skills-container {
     display: flex;
     margin: 40px 0;
     align-items: stretch;
@@ -156,4 +166,14 @@ footer {
 
 .social-list-icon:hover {
     color: #c4f4c7;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4%;
+}
+
+.skill-item {
+    flex-basis: 25%;
 }
