@@ -113,10 +113,12 @@ footer {
 
 .about-me-header .nickname {
     margin-left: 10px;
+    font-size: 1rem;
   }
 
 .about-me-header .my-nickname{
-    box-shadow: inset 0px -3px 0px 0px #35ce8d; 
+    box-shadow: inset 0px -3px 0px 0px #35ce8d;
+    font-size: 1.5rem; 
   }
 
 .about-container {
@@ -196,4 +198,12 @@ footer {
 
 .skill-item i:hover {
     color: #297045;
+}
+
+.header .projects {
+    box-shadow: inset 0px -4px 0px 0px #c2eabd;
+}
+
+.header .contact-me {
+    box-shadow: inset 0px -4px 0px 0px #c2eabd;
 }
