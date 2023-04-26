@@ -22,19 +22,17 @@
 </head>
 <body>
     <header>
-        <div class="wrapper">
-            <div class="top-nav">
-                <nav class="top-bar">
-                    <ul tabindex="0">
-                        <li class="nav-item"><a href="#home">HOME</a></li>
-                        <li class="nav-item"><a href="#about">ABOUT</a></li>
-                        <li class="nav-item"><a href="#">PROJECTS</a></li>
-                        <li class="nav-item"><a href="#">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="wrapper" id="home">
+            <nav class="top-bar">
+                <ul tabindex="0">
+                    <li class="nav-item"><a href="#home">HOME</a></li>
+                    <li class="nav-item"><a href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a href="#project">PROJECTS</a></li>
+                    <li class="nav-item"><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
         </div>
-        <section class="welcome" id="home">
+        <section class="welcome">
             <div class="container">
                 <div class="welcoming">
                     <h1>
@@ -53,13 +51,13 @@
     </header>
     <main>
         <div class="spacer"></div>
-        <div class="wrapper">
+        <div class="wrapper" id="about">
             <div class="about-me-header header">
                 <h2 class="name">Chae-Uk Lim</h2>
                 <p class="nickname">and I go by <span class="my-nickname">Timmy</span>!</p>
             </div>
             <div class="about-container">
-                <div class="about-text" id="about">
+                <div class="about-text">
                     <p>Hello There! Thank you for visiting my website.</p>
                     <p>My name is Chae-uk Lim, aka Timmy and I am a front-end engineer, currently pursuing a Master's degree in Computer Science at the University of North Texas.</p>
                     <p>With a passion for analyzing logic and flows, I thrive on the challenge of finding creative solutions to complex problems. I take pride in staying up-to-date with the latest trends and best practices in front-end development.</p>
@@ -137,7 +135,7 @@
             </div>
         </div>
         <div class="spacer"></div>
-        <div class="wrapper">
+        <div class="wrapper" id="project">
             <div class="project-header header">
                 <h2 class="projects">Projects</h2>
             </div>
@@ -149,11 +147,66 @@
                     <h3> Team Allocation App</h3>
                     <p>Change your team with few clicks!</p>
                     <p>Team allocation app helps HR employees to easily allocate workers in different team.</p>
+                    <h4>Made with</h4>
+                    <ul class="made-list">
+                        <li class="list-item"><i class="fa-brands fa-html5"></i></li>
+                        <li class="list-item"><i class="fa-brands fa-react"></i></li>
+                        <li class="list-item"><i class="fa-brands fa-bootstrap"></i></li>
+                    </ul>
+                    <div class="project-link">
+                        <a href="https://github.com/codnrawbwj/MemberAllocationApp" target="_blank">
+                            GITHUB
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project project-two">
+                <div class="project-text">
+                    <h3>My Website</h3>
+                    <p>Hard-coded Website!</p>
+                    <p>Personal website without using any template!</p>
+                    <p>HTML, CSS, bootstrap, Javascript files are made by myself, suiting my own taste! Animation and other features are under development.</p>
+                    <h4>Made with</h4>
+                    <ul class="made-list">
+                        <li class="list-item"><i class="fa-brands fa-html5"></i></li>
+                        <li class="list-item"><i class="fa-brands fa-css3-alt"></i></li>
+                        <li class="list-item large"><i class="fa-brands fa-bootstrap"></i></li>
+                        <li class="list-item large last-item"><i class="fa-brands fa-square-js"></i></li>
+                    </ul>
+                    <div class="project-link">
+                        <a href="https://github.com/codnrawbwj/TimmyLim" target="_blank">
+                            GITHUB
+                        </a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="assets/myWebsite.png" alt="my website img">
+                </div>
+            </div>
+            <div class="project project-one">
+                <div class="project-image">
+                    <img src="assets/tindog.png" alt="tindog website with bootstrap">
+                </div>
+                <div class="project-text">
+                    <h3>Tindog.com</h3>
+                    <p>Tinder for your dogs!</p>
+                    <p>Tindog website homepage made with bootstrap. Built based on a client's requirement.</p>
+                    <h4>Made with</h4>
+                    <ul class="made-list">
+                        <li class="list-item"><i class="fa-brands fa-html5"></i></li>
+                        <li class="list-item"><i class="fa-brands fa-css3-alt"></i></li>
+                        <li class="list-item"><i class="fa-brands fa-bootstrap"></i></li>
+                    </ul>
+                    <div class="project-link">
+                        <a href="https://github.com/codnrawbwj/WebDev/tree/master/Tindog-Bootstrap" target="_blank">
+                            GITHUB
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="spacer"></div>
-        <div class="wrapper">
+        <div class="wrapper" id="contact">
             <div class="contact-me-header header">
                 <h2 class="contact-me">Contact Me</h2>
             </div>
