@@ -154,11 +154,15 @@ footer {
 
 .social-list-icon{
     color: #297373;
-    font-size: 2.4rem;
 }
 
-.social-list-icon:hover {
+.fa {
+    transform: scale(1.5);
+}
+
+.fa:hover {
     color: #c4f4c7;
+    transform: scale(1.7);
 }
 
 .skills-list {
@@ -183,12 +187,13 @@ footer {
 }
 
 .skill-item i {
-    font-size: 3.5rem;
-    margin-top: 2rem;
+    transform: scale(2);
+    margin: 2rem 0;
 }
 
 .skill-item i:hover {
     color: #297045;
+    transform: scale(2.5);
 }
 
 .header .projects {
