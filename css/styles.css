@@ -23,11 +23,11 @@ h1 {
     font-size: 2rem;
 }
 
-.top-bar {
+/* .top-bar {
     display: flex;
     justify-content: flex-end;
     height: 10vh;
-}
+} */
 
 .top-bar a {
     color: black;
@@ -35,7 +35,7 @@ h1 {
 }
 
 .top-bar a:hover {
-    box-shadow: inset 0px -6px 0px 0px #abff4f; 
+    box-shadow: inset 0px 0px 0px 0px #abff4f; 
 }
 
 ul {
@@ -64,11 +64,7 @@ ul {
     box-shadow: inset 0px -6px 0px 0px #abff4f; 
 }
 
-/* .name{
-    -webkit-text-stroke: 0.0vw;
-} */
-
-.name::before,
+/* .name::before,
 .name::after {
     content: "";
     position: absolute;
@@ -81,13 +77,7 @@ ul {
 .name::before {
     background-color: teal;
     animation: typewriter 1s ease forwards;
-}
-
-@keyframes typewriter {
-    to {
-        left:100%;
-    }
-}
+} */
 
 footer {
     text-align: center;
