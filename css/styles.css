@@ -271,6 +271,11 @@ button:active {
     justify-content: center;
 }
 
+.project-image img {
+    max-width: 580px;
+    max-height: 500px;
+}
+
 .project-text {
     width: 50%;
 }
