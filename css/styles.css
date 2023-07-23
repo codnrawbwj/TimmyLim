@@ -327,3 +327,12 @@ button:active {
 .project-two .last-item {
     margin: 0 0 0 15px;
 }
+
+.links {
+    display: flex;
+
+}
+
+.link-two {
+    margin-left: 20px
+}
