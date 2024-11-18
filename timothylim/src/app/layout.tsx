@@ -2,11 +2,6 @@ import type { Metadata } from "next";
 import { Sen } from "next/font/google";
 import "./globals.css";
 
-// const poppins = Poppins({
-//   subsets: ["latin"],
-//   weight: ["400", "500", "600", "700"],
-//   variable: "--font-poppins",
-// });
 const sen = Sen({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
