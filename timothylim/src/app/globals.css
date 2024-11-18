@@ -14,7 +14,7 @@ body {
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .wrapper {
+    @apply max-w-7xl lg:mx-auto p-5 md:px-10 xl:p-0 w-full;
   }
 }
