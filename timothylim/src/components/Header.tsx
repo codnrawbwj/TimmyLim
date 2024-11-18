@@ -7,7 +7,9 @@ const Header = () => {
     <div className="wrapper flex-end gap-4 md:py-5">
       {headerList.map((headerItem) => (
         <Link href={headerItem.link} key={headerItem.label}>
-          <h2 className="text-xl hover:underline">{headerItem.label}</h2>
+          <h2 className="text-xl hover:underline decoration-accent">
+            {headerItem.label}
+          </h2>
         </Link>
       ))}
     </div>
