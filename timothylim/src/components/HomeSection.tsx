@@ -14,7 +14,7 @@ const HomeSection = () => {
             CHAE-UK LIM <span className="text-[2rem]">aka</span> TIMOTHY
           </h1>
           <p>FRONT-END</p>
-          <p>SOFTWARE ENGINEER</p>
+          <p>SOFTWARE DEVELOPER</p>
         </div>
       </section>
     </motion.div>
