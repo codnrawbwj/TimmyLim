@@ -5,13 +5,18 @@ import { motion } from "motion/react";
 
 const AboutMe = () => {
   return (
-    <section className="wrapper min-h-[100vh] flex-center flex-col tracking-wide gap-10">
-      <motion.div
-        className="flex-center flex-col leading-[1.2] gap-2"
-        initial={{ y: 50 }}
-        animate={{ y: 0 }}
-        transition={{ ease: "easeIn", duration: 0.7 }}
-      >
+    <motion.section
+      className="wrapper min-h-[100vh] flex-center flex-col tracking-wide gap-10"
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: false }}
+      transition={{
+        ease: "easeInOut",
+        duration: 2,
+        x: { duration: 1 },
+      }}
+    >
+      <div className="flex-center flex-col leading-[1.2] gap-2">
         <h2 className="text-[2rem] underline font-medium underline-offset-4 decoration-primary-b">
           Chae-Uk Lim
         </h2>
@@ -21,13 +26,8 @@ const AboutMe = () => {
             Timothy
           </span>
         </p>
-      </motion.div>
-      <motion.div
-        className="max-w-[80%] flex gap-6"
-        initial={{ y: 50 }}
-        animate={{ y: 0 }}
-        transition={{ ease: "easeIn", duration: 1 }}
-      >
+      </div>
+      <div className="max-w-[80%] flex gap-6">
         <div className="text-[1.3rem] flex flex-col gap-4">
           <p>Hello There! Thank you for visiting my website.</p>
           <p>
@@ -50,7 +50,7 @@ const AboutMe = () => {
             alt="my profile picture"
           />
         </div>
-      </motion.div>
+      </div>
       <div className="flex-center gap-8">
         <motion.a
           href="https://github.com/codnrawbwj"
@@ -89,7 +89,7 @@ const AboutMe = () => {
           <FacebookIcon width={36} />
         </motion.a>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
