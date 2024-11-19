@@ -20,6 +20,7 @@ const config: Config = {
         "primary-c": "#35ce8d",
         secondary: "#859F3D",
         accent: "#31511E",
+        "accent-b": "#297373",
         dark: "#1A1A19",
       },
     },
