@@ -6,7 +6,7 @@ const HomeSection = () => {
     <motion.div
       initial={{ x: -400 }}
       animate={{ x: 0 }}
-      transition={{ ease: "easeIn", duration: 0.7 }}
+      transition={{ ease: "easeIn", duration: 0.8 }}
     >
       <section className="wrapper min-h-[90vh] flex items-center font-primary">
         <div className="text-[3rem] leading-[1.6] tracking-wide ml-4">
