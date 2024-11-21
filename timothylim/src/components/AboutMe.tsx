@@ -9,7 +9,6 @@ const AboutMe = () => {
       className="wrapper min-h-[100vh] flex-center flex-col tracking-wide gap-10"
       initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: false }}
       transition={{
         ease: "easeInOut",
         duration: 2,
@@ -22,7 +21,7 @@ const AboutMe = () => {
         </h2>
         <p className="text-[1rem] font-medium">
           and I go by{" "}
-          <span className="text-[1.5rem] font-normal underline underline-offset-4 decoration-primary-c">
+          <span className="text-[1.5rem] font-normal underline underline-offset-8 decoration-primary-c decoration-4">
             Timothy
           </span>
         </p>
