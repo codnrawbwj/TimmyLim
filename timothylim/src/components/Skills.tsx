@@ -19,21 +19,21 @@ import {
 import { motion } from "motion/react";
 
 const iconMap = {
-  javascript: <JavascriptIcon width={80} />,
-  typescript: <TypescriptIcon width={80} />,
-  python: <PythonIcon width={80} />,
-  html: <HTMLIcon width={80} />,
-  css: <CSSIcon width={80} />,
-  tailwind: <TailwindIcon width={80} />,
-  sass: <SassIcon width={80} />,
-  react: <ReactIcon width={80} />,
-  nextjs: <NextjsIcon width={80} />,
-  nodejs: <NodejsIcon width={80} />,
-  mongoDB: <MongoDBIcon width={80} />,
-  garphQL: <GraphQLIcon width={80} />,
-  git: <GitIcon width={80} />,
-  figma: <FigmaIcon width={80} />,
-  jest: <JestIcon width={80} />,
+  javascript: <JavascriptIcon width={65} />,
+  typescript: <TypescriptIcon width={65} />,
+  python: <PythonIcon width={65} />,
+  html: <HTMLIcon width={65} />,
+  css: <CSSIcon width={65} />,
+  tailwind: <TailwindIcon width={65} />,
+  sass: <SassIcon width={65} />,
+  react: <ReactIcon width={65} />,
+  nextjs: <NextjsIcon width={65} />,
+  nodejs: <NodejsIcon width={65} />,
+  mongoDB: <MongoDBIcon width={65} />,
+  garphQL: <GraphQLIcon width={65} />,
+  git: <GitIcon width={65} />,
+  figma: <FigmaIcon width={65} />,
+  jest: <JestIcon width={65} />,
 };
 
 const Skills = () => {
@@ -54,9 +54,17 @@ const Skills = () => {
       </h2>
       <div className="w-full grid grid-cols-5">
         {Object.entries(iconMap).map(([key, icon]) => (
-          <div key={key} className="flex-center px-[2.5rem] py-[2rem]">
+          <motion.div
+            key={key}
+            className="flex-center px-[2.5rem] py-[2rem]"
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
             {icon}
-          </div>
+            {/* <span className="tooltip absolute bottom-[-2rem] text-sm bg-gray-700 text-white px-2 py-1 rounded opacity-0 transition-opacity duration-200">
+              {key}
+            </span> */}
+          </motion.div>
         ))}
       </div>
     </motion.section>
