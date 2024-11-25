@@ -22,7 +22,7 @@ export const projectList: projectListProps[] = [
     imageLink: "/assets/evently.png",
   },
   {
-    title: "Updated Portfolio Website",
+    title: "Renewed Portfolio Website",
     subTitle: "Migrated from Vanila JS to Nextjs",
     description: `Previously built with Vanilla JS, HTML, and CSS, my portfolio website has evolved into a more sophisticated and dynamic platform. Leveraging TypeScript, Next.js, and Framer Motion, I have implemented advanced techniques to create a responsive, interactive, and visually engaging experience that reflects my growth as a front-end developer.`,
     stacks: ["Tailwind", "Typescript", "Nextjs", "Git"],
