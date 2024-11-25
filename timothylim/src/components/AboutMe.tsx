@@ -21,7 +21,7 @@ const AboutMe = () => {
         </h2>
         <p className="text-[1rem] font-medium">
           and I go by{" "}
-          <span className="text-[1.5rem] font-normal underline underline-offset-8 decoration-primary-c decoration-4">
+          <span className="text-[1.5rem] font-normal underline underline-offset-8 decoration-secondary decoration-4">
             Timothy
           </span>
         </p>
