@@ -1,6 +1,9 @@
 ## Timothy Lim
 Personal Website
 
+
+
+
 ## Legacy Main Version
 
 The legacy version of the website is preserved for comparison purposes.
