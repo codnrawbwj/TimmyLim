@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 const HomeSection = () => {
   return (
     <motion.div
+      id="home"
       initial={{ x: -400 }}
       animate={{ x: 0 }}
       transition={{ ease: "easeIn", duration: 0.8 }}

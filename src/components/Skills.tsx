@@ -39,6 +39,7 @@ const iconMap = {
 const Skills = () => {
   return (
     <motion.section
+      id="skills"
       className="wrapper min-h-[100vh] flex-center flex-col gap-[3rem]"
       initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}

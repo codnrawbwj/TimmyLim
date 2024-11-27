@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 const AboutMe = () => {
   return (
     <motion.section
+      id="about"
       className="wrapper min-h-[100vh] flex-center flex-col tracking-wide gap-10"
       initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}

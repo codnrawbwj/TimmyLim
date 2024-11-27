@@ -4,7 +4,7 @@ import { iconMap } from "@/constant/iconMap";
 
 const Projects = () => {
   return (
-    <section className="wrapper min-h-[100vh]">
+    <section id="projects" className="wrapper min-h-[100vh]">
       <div className="flex-center flex-col gap-[3rem]">
         <h2 className="text-[2rem] underline underline-offset-8 decoration-primary-b">
           Projects
