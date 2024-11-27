@@ -3,7 +3,7 @@ export interface projectListProps {
   subTitle: string;
   description: string;
   stacks: string[];
-  year: string;
+  date: string;
   liveLink?: string;
   githubLink: string;
   imageLink: string;
@@ -16,7 +16,7 @@ export const projectList: projectListProps[] = [
     description: `Evently is a full-stack event management app built with Tailwind, TypeScript, Next.js, Node.js, and MongoDB.\n 
     It allows users to create, manage, and track events efficiently, featuring a modern UI, responsive design, and robust backend integration.`,
     stacks: ["React", "Tailwind", "Typescript", "Nextjs", "MongoDB", "Nodejs"],
-    year: "Dec 2024",
+    date: "Dec 2024",
     liveLink: "https://evently-mu-ten.vercel.app/",
     githubLink: "https://github.com/codnrawbwj/evently",
     imageLink: "/assets/evently.png",
@@ -26,7 +26,7 @@ export const projectList: projectListProps[] = [
     subTitle: "Migrated from Vanila JS to Nextjs",
     description: `My old portfolio website had a similar design, but it was originally developed using Vanilla JavaScript, HTML, and CSS. Now, it has been migrated to React, Tailwind, and Next.js, which better showcases my Frontend skills 😉.\n You can find both versions of the code in my GitHub link below. `,
     stacks: ["React", "Tailwind", "Typescript", "Nextjs", "Git"],
-    year: "Nov 2024",
+    date: "Nov 2024",
     liveLink: "/",
     githubLink: "https://github.com/codnrawbwj/TimmyLim",
     imageLink: "/assets/timothyLim.png",
@@ -37,7 +37,7 @@ export const projectList: projectListProps[] = [
     description: `A visually appealing Sushi restaurant website based on provided designs and assets.
 Incorporated animations and transitions using CSS and JavaScript to enhance visual appeal and interactivity.`,
     stacks: ["HTML", "CSS"],
-    year: "June 2023",
+    date: "June 2023",
     liveLink: "https://codnrawbwj.github.io/sushi-restaurant/",
     githubLink: "https://github.com/codnrawbwj/sushi-restaurant",
     imageLink: "/assets/sushisake.png",
@@ -50,7 +50,7 @@ A movie listing app that displays results based on user-provided keywords.
 Utilized React components and state management for efficient UI updates.
 Implemented responsive design using CSS and Bootstrap.`,
     stacks: ["HTML", "CSS", "Javascript", "React"],
-    year: "May 2023",
+    date: "May 2023",
     liveLink: undefined,
     githubLink: "https://github.com/codnrawbwj/wikiflix-react",
     imageLink: "/assets/wikiflix.png",
@@ -63,7 +63,7 @@ Utilized JavaScript to dynamically update the weather information based on user 
 Integrated an external weather API to fetch and display real-time weather information.
 Designed and styled the user interface using CSS to provide an intuitive and visually appealing experience.`,
     stacks: ["HTML", "CSS", "Javascript"],
-    year: "April 2023",
+    date: "April 2023",
     liveLink: undefined,
     githubLink: "https://github.com/codnrawbwj/WeatherApp-JS",
     imageLink: "/assets/weather.png",

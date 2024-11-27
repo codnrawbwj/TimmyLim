@@ -5,11 +5,11 @@ import { iconMap } from "@/constant/iconMap";
 const Projects = () => {
   return (
     <section id="projects" className="wrapper min-h-[100vh]">
-      <div className="flex-center flex-col gap-[3rem]">
+      <div className="flex-center flex-col gap-[6rem] pt-[6rem]">
         <h2 className="text-[2rem] underline underline-offset-8 decoration-primary-b">
           Projects
         </h2>
-        <div className="flex-center flex-col gap-[10rem] w-3/4">
+        <div className="flex-center flex-col gap-[50vh] w-3/4 pb-[30vh]">
           {projectList.map((project) => (
             <div key={project.title} className="flex gap-10">
               <Image
@@ -20,7 +20,12 @@ const Projects = () => {
                 className="flex-1 object-contain"
               />
               <div className="flex justify-center items-start flex-col gap-4">
-                <h3 className="text-[2rem] tracking-normal">{project.title}</h3>
+                <h3 className="text-[2rem] tracking-normal">
+                  {project.title}{" "}
+                  <span className="text-[1rem] text-gray-400 italic">
+                    ({project.date})
+                  </span>
+                </h3>
                 <h4 className="text-[1.3rem]">{project.subTitle}</h4>
                 <p>
                   {project.description.split("\n").map((line, index) => (
