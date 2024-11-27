@@ -19,7 +19,7 @@ export const projectList: projectListProps[] = [
     date: "Dec 2024",
     liveLink: "https://evently-mu-ten.vercel.app/",
     githubLink: "https://github.com/codnrawbwj/evently",
-    imageLink: "./public/assets/evently.png",
+    imageLink: "./assets/evently.png",
   },
   {
     title: "Renewed Portfolio Website",
@@ -29,18 +29,18 @@ export const projectList: projectListProps[] = [
     date: "Nov 2024",
     liveLink: "/",
     githubLink: "https://github.com/codnrawbwj/TimmyLim",
-    imageLink: "./public/assets/timothyLim.png",
+    imageLink: "./assets/timothyLim.png",
   },
   {
     title: "Sushi Sake",
     subTitle: "Sushi Restaurant Website!",
-    description: `A visually appealing Sushi restaurant website based on provided designs and./public assets.
+    description: `A visually appealing Sushi restaurant website based on provided designs and. assets.
 Incorporated animations and transitions using CSS and JavaScript to enhance visual appeal and interactivity.`,
     stacks: ["HTML", "CSS"],
     date: "June 2023",
     liveLink: "https://codnrawbwj.github.io/sushi-restaurant/",
     githubLink: "https://github.com/codnrawbwj/sushi-restaurant",
-    imageLink: "./public/assets/sushisake.png",
+    imageLink: "./assets/sushisake.png",
   },
   {
     title: "Wiki-Flix",
@@ -53,7 +53,7 @@ Implemented responsive design using CSS and Bootstrap.`,
     date: "May 2023",
     liveLink: undefined,
     githubLink: "https://github.com/codnrawbwj/wikiflix-react",
-    imageLink: "./public/assets/wikiflix.png",
+    imageLink: "./assets/wikiflix.png",
   },
   {
     title: "Weather App",
@@ -66,6 +66,6 @@ Designed and styled the user interface using CSS to provide an intuitive and vis
     date: "April 2023",
     liveLink: undefined,
     githubLink: "https://github.com/codnrawbwj/WeatherApp-JS",
-    imageLink: "./public/assets/weather.png",
+    imageLink: "./assets/weather.png",
   },
 ];
