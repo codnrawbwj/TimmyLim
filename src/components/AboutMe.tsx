@@ -8,15 +8,18 @@ const AboutMe = () => {
     <motion.section
       id="about"
       className="wrapper min-h-[100vh] flex-center flex-col tracking-wide gap-10"
-      initial={{ opacity: 0, x: 50 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{
+        opacity: 0,
+        y: 20,
+      }}
+      whileInView={{ opacity: 1, x: 0, y: 0 }}
       transition={{
         ease: "easeInOut",
-        duration: 2,
-        x: { duration: 1 },
+        duration: 1,
+        y: { duration: 1 },
       }}
     >
-      <div className="flex-center flex-col leading-[1.2] gap-2">
+      <div className="flex-center flex-col leading-[1.2] gap-2 pt-[10rem] md:pt-0">
         <h2 className="text-[2rem] underline font-medium underline-offset-4 decoration-primary-b">
           Chae-Uk Lim
         </h2>
@@ -27,8 +30,8 @@ const AboutMe = () => {
           </span>
         </p>
       </div>
-      <div className="max-w-[80%] flex gap-6">
-        <div className="text-[1.3rem] flex flex-col gap-4">
+      <div className="max-w-[80%] flex gap-6 md:flex-row flex-col-reverse ">
+        <div className="text-[1rem] md:text-[1.3rem] flex flex-col gap-4">
           <p>Hello There! Thank you for visiting my website.</p>
           <p>
             My name is Chae-uk Lim, aka Timothy and I am a front-end developer
