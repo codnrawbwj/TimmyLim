@@ -4,10 +4,10 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="wrapper flex-end gap-4 md:py-5">
+    <div className="wrapper fixed flex-center bg-white md:flex-end gap-4 !py-5">
       {headerList.map((headerItem) => (
         <Link href={headerItem.link} key={headerItem.label}>
-          <h2 className="text-xl hover:underline decoration-accent">
+          <h2 className="text-sm md:text-xl hover:underline decoration-accent">
             {headerItem.label}
           </h2>
         </Link>
