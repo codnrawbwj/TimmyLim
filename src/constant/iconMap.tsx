@@ -1,0 +1,36 @@
+import {
+  CSSIcon,
+  FigmaIcon,
+  GitIcon,
+  GraphQLIcon,
+  HTMLIcon,
+  JavascriptIcon,
+  JestIcon,
+  MongoDBIcon,
+  NextjsIcon,
+  NodejsIcon,
+  PythonIcon,
+  ReactIcon,
+  SassIcon,
+  TailwindIcon,
+  TypescriptIcon,
+} from "@/icons";
+import React from "react";
+
+export const iconMap: { [key: string]: React.ReactElement } = {
+  javascript: <JavascriptIcon width={36} />,
+  typescript: <TypescriptIcon width={36} />,
+  python: <PythonIcon width={36} />,
+  html: <HTMLIcon width={36} />,
+  css: <CSSIcon width={36} />,
+  tailwind: <TailwindIcon width={36} />,
+  sass: <SassIcon width={36} />,
+  react: <ReactIcon width={36} />,
+  nextjs: <NextjsIcon width={36} />,
+  nodejs: <NodejsIcon width={36} />,
+  mongoDB: <MongoDBIcon width={36} />,
+  garphQL: <GraphQLIcon width={36} />,
+  git: <GitIcon width={36} />,
+  figma: <FigmaIcon width={36} />,
+  jest: <JestIcon width={36} />,
+};
