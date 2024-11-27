@@ -12,10 +12,10 @@ export interface projectListProps {
 export const projectList: projectListProps[] = [
   {
     title: "Evently",
-    subTitle: "Event Management Full Stack Project",
-    description:
-      "Evently is a full-stack event management app built with Tailwind, TypeScript, Next.js, Node.js, and MongoDB. It allows users to create, manage, and track events efficiently, featuring a modern UI, responsive design, and robust backend integration.",
-    stacks: ["Tailwind, Typescript, Nextjs", "MongoDB", "Nodejs"],
+    subTitle: "Event Management Full-Stack Project",
+    description: `Evently is a full-stack event management app built with Tailwind, TypeScript, Next.js, Node.js, and MongoDB.\n 
+    It allows users to create, manage, and track events efficiently, featuring a modern UI, responsive design, and robust backend integration.`,
+    stacks: ["React", "Tailwind", "Typescript", "Nextjs", "MongoDB", "Nodejs"],
     year: "Dec 2024",
     liveLink: "https://evently-mu-ten.vercel.app/",
     githubLink: "https://github.com/codnrawbwj/evently",
@@ -24,12 +24,23 @@ export const projectList: projectListProps[] = [
   {
     title: "Renewed Portfolio Website",
     subTitle: "Migrated from Vanila JS to Nextjs",
-    description: `Previously built with Vanilla JS, HTML, and CSS, my portfolio website has evolved into a more sophisticated and dynamic platform. Leveraging TypeScript, Next.js, and Framer Motion, I have implemented advanced techniques to create a responsive, interactive, and visually engaging experience that reflects my growth as a front-end developer.`,
-    stacks: ["Tailwind", "Typescript", "Nextjs", "Git"],
+    description: `My old portfolio website had a similar design, but it was originally developed using Vanilla JavaScript, HTML, and CSS. Now, it has been migrated to React, Tailwind, and Next.js, which better showcases my Frontend skills 😉.\n You can find both versions of the code in my GitHub link below. `,
+    stacks: ["React", "Tailwind", "Typescript", "Nextjs", "Git"],
     year: "Nov 2024",
     liveLink: "/",
     githubLink: "https://github.com/codnrawbwj/TimmyLim",
     imageLink: "/assets/timothyLim.png",
+  },
+  {
+    title: "Sushi Sake",
+    subTitle: "Sushi Restaurant Website!",
+    description: `A visually appealing Sushi restaurant website based on provided designs and assets.
+Incorporated animations and transitions using CSS and JavaScript to enhance visual appeal and interactivity.`,
+    stacks: ["HTML", "CSS"],
+    year: "June 2023",
+    liveLink: "https://codnrawbwj.github.io/sushi-restaurant/",
+    githubLink: "https://github.com/codnrawbwj/sushi-restaurant",
+    imageLink: "/assets/sushisake.png",
   },
   {
     title: "Wiki-Flix",
@@ -56,16 +67,5 @@ Designed and styled the user interface using CSS to provide an intuitive and vis
     liveLink: undefined,
     githubLink: "https://github.com/codnrawbwj/WeatherApp-JS",
     imageLink: "/assets/weather.png",
-  },
-  {
-    title: "Sushi Sake",
-    subTitle: "Sushi Restaurant Website!",
-    description: `A visually appealing Sushi restaurant website based on provided designs and assets.
-Incorporated animations and transitions using CSS and JavaScript to enhance visual appeal and interactivity.`,
-    stacks: ["HTML", "CSS"],
-    year: "June 2023",
-    liveLink: "https://codnrawbwj.github.io/sushi-restaurant/",
-    githubLink: "https://github.com/codnrawbwj/sushi-restaurant",
-    imageLink: "/assets/sushisake.png",
   },
 ];
