@@ -44,7 +44,7 @@ const AboutMe = () => {
         </div>
         <div className="min-w-[300px]">
           <Image
-            src="/assets/myProfile.jpg"
+            src="./public/assets/myProfile.jpg"
             width={270}
             height={300}
             alt="my profile picture"
