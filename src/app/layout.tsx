@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sen } from "next/font/google";
 import "./globals.css";
+import RemoteController from "@/components/RemoteController";
 
 const sen = Sen({
   subsets: ["latin"],
@@ -31,7 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sen.variable} antialiased`}>{children}</body>
+      <body className={`${sen.variable} antialiased`}>
+        {children}
+        <RemoteController />
+      </body>
     </html>
   );
 }

@@ -4,7 +4,7 @@ const ContactMe = () => {
   return (
     <section
       id="contact"
-      className="wrapper min-h-[100vh] flex-center flex-col gap-[4rem]"
+      className="wrapper min-h-[90vh] flex-center flex-col gap-[4rem]"
     >
       <h2 className="text-[2rem] underline unerline-offset-8 decoration-primary-b">
         Contact Me
