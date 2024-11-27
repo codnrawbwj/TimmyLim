@@ -41,23 +41,26 @@ const Skills = () => {
     <motion.section
       id="skills"
       className="wrapper min-h-[100vh] flex-center flex-col gap-[3rem]"
-      initial={{ opacity: 0, x: 50 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{
+        opacity: 0,
+        y: 20,
+      }}
+      whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: false }}
       transition={{
         ease: "easeInOut",
-        duration: 2,
-        x: { duration: 1 },
+        duration: 1,
+        y: { duration: 1 },
       }}
     >
       <h2 className="text-[2rem] underline underline-offset-4 decoration-primary-b">
         Skills
       </h2>
-      <div className="w-full grid grid-cols-5">
+      <div className="w-full grid md:grid-cols-5 grid-cols-3">
         {Object.entries(iconMap).map(([key, icon]) => (
           <motion.div
             key={key}
-            className="flex-center px-[2.5rem] py-[2rem]"
+            className="flex-center p-[1rem] md:px-[2.5rem] md:py-[2rem]"
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >

@@ -5,11 +5,11 @@ const HomeSection = () => {
   return (
     <motion.div
       id="home"
-      initial={{ x: -400 }}
-      animate={{ x: 0 }}
-      transition={{ ease: "easeIn", duration: 0.8 }}
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ ease: "easeIn", duration: 1 }}
     >
-      <section className="wrapper min-h-[90vh] flex items-center font-primary">
+      <section className="wrapper min-h-[100vh] flex items-center font-primary">
         <div className="text-[3rem] leading-[1.6] tracking-wide ml-4">
           <h1 className="underline text-underline-offset-0 decoration-[6px] decoration-secondary">
             CHAE-UK LIM <span className="text-[2rem]">aka</span> TIMOTHY

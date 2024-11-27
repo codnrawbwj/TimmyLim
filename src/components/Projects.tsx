@@ -21,13 +21,19 @@ const Projects = () => {
         >
           Projects
         </motion.h2>
-        <div className="flex-center flex-col gap-[50vh] w-3/4 pb-[30vh]">
+        <div className="flex-center flex-col gap-[50vh] md:w-3/4 pb-[30vh]">
           {projectList.map((project) => (
-            <div key={project.title} className="flex items-center gap-10">
+            <div
+              key={project.title}
+              className="flex items-center gap-10 flex-col md:flex-row"
+            >
               <motion.div
-                className="min-w-[460px] flex-center h-full"
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                className="min-w-[240px] md:min-w-[460px] flex-center h-full"
+                initial={{
+                  opacity: 0,
+                  y: 20,
+                }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{
                   ease: "easeInOut",
                   duration: 1,
@@ -39,12 +45,23 @@ const Projects = () => {
                   alt={project.subTitle}
                   width={460}
                   height={380}
+                  className="hidden md:block"
+                />
+                <Image
+                  src={project.imageLink}
+                  alt={project.subTitle}
+                  width={300}
+                  height={240}
+                  className="block md:hidden"
                 />
               </motion.div>
               <motion.div
                 className="flex justify-center items-start flex-col gap-4"
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{
+                  opacity: 0,
+                  y: 20,
+                }}
+                whileInView={{ opacity: 1, x: 0, y: 0 }}
                 transition={{
                   ease: "easeInOut",
                   duration: 1,
