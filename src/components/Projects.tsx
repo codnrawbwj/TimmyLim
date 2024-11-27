@@ -1,31 +1,60 @@
+"use client";
 import { projectList } from "@/constant/projectList";
 import Image from "next/image";
 import { iconMap } from "@/constant/iconMap";
+import { motion } from "motion/react";
 
 const Projects = () => {
   return (
     <section id="projects" className="wrapper min-h-[100vh]">
       <div className="flex-center flex-col gap-[6rem] pt-[6rem]">
-        <h2 className="text-[2rem] underline underline-offset-8 decoration-primary-b">
+        <motion.h2
+          className="text-[2rem] underline underline-offset-8 decoration-primary-b"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false }}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.5,
+            x: { duration: 0.5 },
+          }}
+        >
           Projects
-        </h2>
+        </motion.h2>
         <div className="flex-center flex-col gap-[50vh] w-3/4 pb-[30vh]">
           {projectList.map((project) => (
-            <div key={project.title} className="flex gap-10">
-              <Image
-                src={project.imageLink}
-                alt={project.subTitle}
-                width={460}
-                height={380}
-                className="flex-1 object-contain"
-              />
-              <div className="flex justify-center items-start flex-col gap-4">
-                <h3 className="text-[2rem] tracking-normal">
-                  {project.title}{" "}
-                  <span className="text-[1rem] text-gray-400 italic">
-                    ({project.date})
-                  </span>
-                </h3>
+            <div key={project.title} className="flex items-center gap-10">
+              <motion.div
+                className="min-w-[460px] flex-center h-full"
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{
+                  ease: "easeInOut",
+                  duration: 1,
+                  x: { duration: 1 },
+                }}
+              >
+                <Image
+                  src={project.imageLink}
+                  alt={project.subTitle}
+                  width={460}
+                  height={380}
+                />
+              </motion.div>
+              <motion.div
+                className="flex justify-center items-start flex-col gap-4"
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{
+                  ease: "easeInOut",
+                  duration: 1,
+                  x: { duration: 1 },
+                }}
+              >
+                <h3 className="text-[2rem] tracking-normal">{project.title}</h3>
+                <span className="text-[1rem] text-gray-400 italic">
+                  ({project.date})
+                </span>
                 <h4 className="text-[1.3rem]">{project.subTitle}</h4>
                 <p>
                   {project.description.split("\n").map((line, index) => (
@@ -57,7 +86,7 @@ const Projects = () => {
                     </button>
                   )}
                 </div>
-              </div>
+              </motion.div>
             </div>
           ))}
         </div>
