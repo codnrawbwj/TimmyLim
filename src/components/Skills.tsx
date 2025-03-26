@@ -60,14 +60,16 @@ const Skills = () => {
         {Object.entries(iconMap).map(([key, icon]) => (
           <motion.div
             key={key}
-            className="flex-center p-[1rem] md:px-[2.5rem] md:py-[2rem]"
+            className="flex-center group p-[1rem] md:px-[2.5rem] md:py-[2rem]"
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
-            {icon}
-            {/* <span className="tooltip absolute bottom-[-2rem] text-sm bg-gray-700 text-white px-2 py-1 rounded opacity-0 transition-opacity duration-200">
-              {key}
-            </span> */}
+            <div className="transition-opacity group-hover:opacity-30">
+              {icon}
+            </div>
+            <div className="absolute mb-2 px-3 py-1 text-md font-semibold bg-transparent text-black rounded opacity-0 group-hover:opacity-100 transition-opacity">
+              {key[0].toUpperCase() + key.slice(1)}
+            </div>
           </motion.div>
         ))}
       </div>

@@ -34,9 +34,9 @@ const AboutMe = () => {
         <div className="text-[1rem] md:text-[1.3rem] flex flex-col gap-4">
           <p>Hello There! Thank you for visiting my website.</p>
           <p>
-            My name is Chae-uk Lim, aka Timothy and I am a front-end developer
-            currently working at WorkOnward as a junior front-end developer and
-            quality engineer.
+            My name is Chae-uk Lim, also known as Timothy, and I am a{" "}
+            <span className="font-semibold">front-end developer</span> currently
+            working at WorkOnward with 2 years of experience.
           </p>
           <p>
             With a passion for analyzing logic and flows, I thrive on the
@@ -62,6 +62,7 @@ const AboutMe = () => {
             textDecoration: "none",
             color: "inherit",
           }}
+          target="_blank"
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
@@ -74,6 +75,7 @@ const AboutMe = () => {
             textDecoration: "none",
             color: "inherit",
           }}
+          target="_blank"
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
@@ -86,6 +88,7 @@ const AboutMe = () => {
             textDecoration: "none",
             color: "inherit",
           }}
+          target="_blank"
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
