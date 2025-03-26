@@ -19,7 +19,7 @@ export const projectList: projectListProps[] = [
     date: "Mar 2025 - in progress",
     liveLink: "https://mrlime-timmys-projects-49ec29d6.vercel.app/",
     githubLink: "https://github.com/codnrawbwj/mrlime",
-    imageLink: "/assets/mrlime.png",
+    imageLink: "./assets/mrlime.png",
   },
   {
     title: "Renewed Portfolio Website",
