@@ -5,9 +5,9 @@ const HomeSection = () => {
   return (
     <motion.div
       id="home"
-      initial={{ opacity: 0, x: -100 }}
+      initial={{ opacity: 0, x: -30 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ ease: "easeIn", duration: 1 }}
+      transition={{ ease: "easeIn", duration: 0.7 }}
     >
       <section className="wrapper min-h-[100vh] flex items-center font-primary">
         <div className="text-[3rem] leading-[1.6] tracking-wide ml-4">

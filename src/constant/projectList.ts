@@ -11,15 +11,15 @@ export interface projectListProps {
 
 export const projectList: projectListProps[] = [
   {
-    title: "Evently",
-    subTitle: "Event Management Full-Stack Project",
-    description: `Evently is a full-stack event management app built with Tailwind, TypeScript, Next.js, Node.js, and MongoDB.\n 
-    It allows users to create, manage, and track events efficiently, featuring a modern UI, responsive design, and robust backend integration.`,
+    title: "Mr.Lime",
+    subTitle: "",
+    description: `Mr.Lime is a sleek and fast cocktail information site, helping you discover and explore cocktails effortlessly. Built with Tailwind, TypeScript, React, Next.js, Node.js, and MongoDB.\n 
+    It allows users to search cocktail recipes with modern UIs, responsive design, and robust backend integration.`,
     stacks: ["React", "Tailwind", "Typescript", "Nextjs", "MongoDB", "Nodejs"],
-    date: "Dec 2024",
-    liveLink: "https://evently-mu-ten.vercel.app/",
-    githubLink: "https://github.com/codnrawbwj/evently",
-    imageLink: "./assets/evently.png",
+    date: "Mar 2025 - in progress",
+    liveLink: "https://mrlime-timmys-projects-49ec29d6.vercel.app/",
+    githubLink: "https://github.com/codnrawbwj/mrlime",
+    imageLink: "/assets/mrlime.png",
   },
   {
     title: "Renewed Portfolio Website",

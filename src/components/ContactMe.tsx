@@ -12,7 +12,7 @@ const ContactMe = () => {
       <div className="flex flex-col justify-center items-start gap-[2rem]">
         <h3 className="text-[1.5rem]">Front-End Developer</h3>
         <div className="flex flex-col">
-          <p>dlacodnr@icloud.com</p>
+          <p>codnrawbwj@gmail.com</p>
           <p>github.com/codnrawbwj</p>
           <p>Based in Dallas, TX</p>
         </div>
